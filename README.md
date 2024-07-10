@@ -9,18 +9,6 @@
 - **Slack統合**: 指定されたSlackチャンネルにリマインダーを直接送信します。
 - **動的な出発時間計算**: 交通時間、旅行時間、および天候条件に基づいて追加の時間を考慮して、推奨出発時間を計算します。
 
-## はじめに
-
-### 前提条件
-
-- Google Apps ScriptとGoogle CalendarにアクセスできるGoogleアカウント。
-- チャンネルにメッセージを送信するためのWebhook URLを持つSlackワークスペース。
-- OpenWeatherMap APIキー。
-
-### インストール
-
-1. **リポジトリをクローン**:
-   ```bash
-   git clone https://github.com/lhj0207/Reminder.git
+## 通知の例
 
 ![天気情報例](https://github.com/lhj0207/Reminder/blob/main/Test-1.png)
