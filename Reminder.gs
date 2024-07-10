@@ -56,7 +56,7 @@ function calculateDepartureTime(dayOfWeek) {
 }
 
 function getWeatherFromOpenWeather() {
-  var apiKey = "2ba6d1c8848259e39fadb70ddfededfe";
+  var apiKey = "YOUR_API_KEY"; // Replace with actual API key
   var city = "Tokyo";
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
@@ -73,7 +73,7 @@ function getWeatherFromOpenWeather() {
 }
 
 function getTeachingWeekInfo() {
-  var calendarId = "c_bokiphfd9oup1vfvh3fa4d8ls0@group.calendar.google.com";
+  var calendarId = "YOUR_CALENDAR_ID"; // Replace with actual calendar ID
   var timeZone = "Asia/Tokyo";
   var today = new Date();
   var startDate = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0);
@@ -101,7 +101,7 @@ function getTeachingWeekInfo() {
 }
 
 function sendSlackMessage(weather, recommendedDepartureTime, classStartTime, teachingWeekInfo) {
-  var url = "https://hooks.slack.com/services/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"; // Replace with your Slack webhook URL
+  var url = "YOUR_SLACK_WEBHOOK_URL"; // Replace with your Slack webhook URL
   var formattedDepartureTime = Utilities.formatDate(recommendedDepartureTime, Session.getScriptTimeZone(), "yyyy-MM-dd HH:mm");
   
   var message = "🚶出発時間：" + formattedDepartureTime + "\n"
@@ -128,7 +128,7 @@ function sendSlackMessage(weather, recommendedDepartureTime, classStartTime, tea
 }
 
 function getTemperatureFromOpenWeather() {
-  var apiKey = "2ba6d1c8848259e39fadb70ddfededfe";
+  var apiKey = "YOUR_API_KEY"; // Replace with actual API key
   var city = "Tokyo";
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
@@ -144,7 +144,7 @@ function getTemperatureFromOpenWeather() {
 }
 
 function getHumidityFromOpenWeather() {
-  var apiKey = "2ba6d1c8848259e39fadb70ddfededfe";
+  var apiKey = "YOUR_API_KEY"; // Replace with actual API key
   var city = "Tokyo";
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
