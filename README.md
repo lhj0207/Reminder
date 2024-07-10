@@ -21,4 +21,4 @@
 
 1. **リポジトリをクローン**:
    ```bash
-   git clone https://github.com/yourusername/class-reminder-weather-app.git
+   git clone https://github.com/lhj0207/Reminder.git
