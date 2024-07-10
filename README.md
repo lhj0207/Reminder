@@ -23,4 +23,4 @@
    ```bash
    git clone https://github.com/lhj0207/Reminder.git
 
-![天気情報例]()
+![天気情報例](https://github.com/lhj0207/Reminder/blob/main/Test-1.png)
